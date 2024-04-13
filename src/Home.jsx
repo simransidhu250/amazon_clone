@@ -11,7 +11,7 @@ function Home() {
                     <Product title="Zero To One"
                         price={29.99}
                         image="https://m.media-amazon.com/images/I/51zGCdRQXOL._SL1200_.jpg"
-                        rating={2}
+                        rating={5}
                     />
                     <Product />
                     <Product />
