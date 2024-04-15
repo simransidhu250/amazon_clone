@@ -2,10 +2,13 @@ import React from 'react'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='header'>
-            <img src='https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png' className='header__logo'></img>
+            <Link to={"/"}>
+                <img src='https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png' className='header__logo' />
+            </Link>
             <div className="header__search">
                 <input className='header__searchInput' type='text'></input>
                 <SearchIcon className='header__searchIcon' />
