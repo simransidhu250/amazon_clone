@@ -5,19 +5,19 @@ import Header from './Header.jsx'
 import Home from './Home.jsx'
 import {
   createBrowserRouter,
-  Route,
+  createRoutesFromElements, Route,
   RouterProvider,
 } from "react-router-dom";
-
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Home />}>
+      <Route path="/checkout" element={<Checkout />} />
+    </Route>
+  )
+);
 function App() {
   // const [count, setCount] = useState(0)
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<Home />}>
-        <Route path="/checkout" element={<Checkout />} />
-      </Route>
-    )
-  );
+
 
   return (
     // BEM
