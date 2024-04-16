@@ -4,6 +4,7 @@ import Checkout from './Checkout.jsx';
 import Header from './Header.jsx'
 import Home from './Home.jsx'
 import {
+  BrowserRouter,
   createBrowserRouter,
   createRoutesFromElements, Route,
   RouterProvider,
@@ -12,7 +13,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
       <Route path="/checkout" element={<Checkout />} />
-    </Route>
+    </Route >
   )
 );
 function App() {
@@ -22,7 +23,6 @@ function App() {
   return (
     // BEM
     <div className='app'>
-      <Header />
       <RouterProvider router={router} />
     </div>
   )
