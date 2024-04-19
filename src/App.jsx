@@ -4,14 +4,13 @@ import Checkout from './Checkout.jsx';
 import Header from './Header.jsx'
 import Home from './Home.jsx'
 import {
-  BrowserRouter,
   createBrowserRouter,
   createRoutesFromElements, Route,
   RouterProvider,
 } from "react-router-dom";
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Home />}>
+    <Route path="/" element={<Header />}>
       <Route path="/checkout" element={<Checkout />} />
     </Route >
   )
