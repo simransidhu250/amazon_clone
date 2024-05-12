@@ -23,7 +23,8 @@ function Home() {
                         image="https://m.media-amazon.com/images/I/51zGCdRQXOL._SL1200_.jpg"
                         rating={5}
                     />
-
+                </div>
+                <div className="home__row">
                     <Product
                         id="1031"
                         title="Zero To One"
@@ -31,9 +32,6 @@ function Home() {
                         image="https://m.media-amazon.com/images/I/51zGCdRQXOL._SL1200_.jpg"
                         rating={5}
                     />
-                </div>
-                <div className="home__row">
-                    <Product />
                     <Product />
                     <Product />
                 </div>
