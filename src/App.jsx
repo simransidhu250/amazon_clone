@@ -55,7 +55,13 @@ function App() {
     {
       path: '/login',
       element: <Login />
+    },
+    {
+      path: '/payment',
+      element: <h1>This is payment page</h1>
     }
+
+
   ]);
 
   return (
