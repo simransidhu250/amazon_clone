@@ -9,6 +9,7 @@ import { useStateValue } from './StateProvider.jsx';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase.jsx';
+import Payment from './Payment.jsx'
 
 
 
@@ -45,6 +46,10 @@ function App() {
   // const [count, setCount] = useState(0)
   const router = createBrowserRouter([
     {
+      path: '*',
+      element: <div><Header /><Home /></div>
+    },
+    {
       path: '/',
       element: <div><Header /><Home /></div>
     },
@@ -58,7 +63,7 @@ function App() {
     },
     {
       path: '/payment',
-      element: <h1>This is payment page</h1>
+      element: <Payment />
     }
 
 
